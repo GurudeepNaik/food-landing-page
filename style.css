@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&family=Macondo&family=Poppins:ital,wght@0,300;1,300&family=Roboto+Flex:opsz,wght@8..144,300;8..144,400&family=Urbanist:ital,wght@0,300;1,200&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(./images/bg.jpg)no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px #000;
+  overflow: hidden;
+}
+
+header .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+header nav {
+  width: 90%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+header nav li {
+  padding-left: 25px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: rgb(195, 193, 193);
+  font-weight: 400;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 13px;
+  transition: all .3s ease-in-out;
+}
+
+header nav li a:hover {
+  color: rgb(5, 0, 0);
+  font-weight: 500;
+}
+
+header nav .brand {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+header .main-container {
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+
+header .main-container .content-bx,
+.dish-bx {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid red; */
+  position: relative;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+header .main-container .content-bx {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .main-container .content-bx h3 {
+  font-size: 18px;
+  color: crimson;
+  transition: all .3s ease-in-out;
+  padding-bottom: 5px;
+}
+
+header .main-container .content-bx p {
+  font-size: 13px;
+  color: grey;
+  transition: all .3s ease-in-out;
+  word-break: break-all;
+  width: 350px;
+  padding-top: 5px;
+}
+
+header .main-container .content-bx button {
+  width: 150px;
+  padding: 8px 10px;
+  border-radius: 30px;
+  margin-top: 10px;
+  border: 2px solid #131314;
+  background: #131314;
+  color: #fff;
+  font-family: 'Balsamiq Sans', cursive;
+  box-shadow: 3px 5px 8px gray;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+header .main-container .content-bx button:hover {
+  color: #131314;
+  background: transparent;
+  font-weight: bold;
+}
+
+header .main-container .content-bx .menu {
+  position: absolute;
+  bottom: 0px;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+header .main-container .content-bx .menu img {
+  width: 90px;
+  height: 70px;
+  transition: all .3s ease-in-out;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+header .main-container .content-bx .menu img:hover {
+  width: 100px;
+  height: 80px;
+}
+
+header .main-container .dish-bx .dish1 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -35px;
+  transition: all .6s ease-in-out;
+  filter: drop-shadow(5px 10px 10px #000);
+}
+
+@media only screen and (max-width:1077px) {
+  header .main-container .content-bx p {
+    width: 330px;
+  }
+
+  header .main-container .content-bx .menu img {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  header .main-container .content-bx h3 {
+    font-size: 15px;
+  }
+
+  header .main-container .content-bx h1 {
+    font-size: 25px;
+  }
+
+  header .main-container .content-bx p {
+    width: 260px;
+  }
+
+  header .main-container .dish-bx .dish1 {
+    width: 330px;
+    height: 320px;
+    top: 17px;
+  }
+
+  header .main-container .content-bx .menu img {
+    width: 60px;
+    height: 50px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width:842px) {
+  header .main-container .content-bx p {
+    width: 210px;
+  }
+
+  header .main-container .dish-bx .dish1 {
+    width: 260px;
+    height: 250px;
+    top: 50px;
+  }
+
+  header .main-container .content-bx .menu img {
+    width: 50px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width:700px) {
+  header .bg {
+    width: 200%;
+  }
+  header nav li {
+    padding-left: 20px;
+  }
+  header .main-container {
+   flex-wrap: wrap-reverse;
+  }
+  header .main-container .dish-bx {
+    position: relative;
+  }
+  element.style{
+    width: 40%;
+  }
+}
